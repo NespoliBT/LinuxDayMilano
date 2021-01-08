@@ -35,7 +35,11 @@ const Header = () => {
         }}
       >
         <Container>
-          <Navbar.Brand style={{ maxWidth: "5rem" }} className='brand' href='/'>
+          <Navbar.Brand
+            style={{ maxWidth: "5rem" }}
+            className='brand'
+            href='/index'
+          >
             <Logo className='logo' /> LD<span>MI {year}</span>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls='responsive-navbar-nav' />
@@ -44,15 +48,17 @@ const Header = () => {
             className='justify-content-end'
           >
             <Nav>
-              <Nav.Link href='/#explore'>Evento</Nav.Link>
+              <Nav.Link href='/index#explore'>Evento</Nav.Link>
               {switches.cfp && (
-                <Nav.Link href='/#call-for-papers'>Call for papers</Nav.Link>
+                <Nav.Link href='/index#call-for-papers'>
+                  Call for papers
+                </Nav.Link>
               )}
               {switches.schedule && (
-                <Nav.Link href='/#schedule'>Programma</Nav.Link>
+                <Nav.Link href='/index#schedule'>Programma</Nav.Link>
               )}
-              <Nav.Link href='/#sponsors'>Sponsors</Nav.Link>
-              <Nav.Link href='/#contattaci'>Contatti</Nav.Link>
+              <Nav.Link href='/index#sponsors'>Sponsors</Nav.Link>
+              <Nav.Link href='/index#contattaci'>Contatti</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
